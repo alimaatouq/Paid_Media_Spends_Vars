@@ -35,7 +35,3 @@ if uploaded_file is not None:
     st.code(spend_output, language='text')
     st.code(impression_output, language='text')
 
-    # Step 7: Button to copy to clipboard
-    if st.button("Copy to Clipboard"):
-        pyperclip.copy(spend_output + "\n\n" + impression_output)
-        st.success("Copied to clipboard!")
